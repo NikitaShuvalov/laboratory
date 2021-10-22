@@ -1,12 +1,12 @@
 # laboratory
 
-### lists/LDB.c - List DataBase.
+#### lists/LDB.c - List DataBase.
 
-### queue/queue.c
+#### queue/queue.c
 
-### stack/RCAGC.c - robot control and goods control application.
+#### stack/RCAGC.c - robot control and goods control application.
 
-## Run
+### Run
 
 - make <file_name>
 - ./<file_name>
