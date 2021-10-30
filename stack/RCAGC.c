@@ -1,10 +1,12 @@
-// RCAGC - robot control and goods control application.
-
 #include <stdio.h>
+#include <stdlib.h>
+#include "rcagc.h"
 
+int main()
+{
+	ListDataBase food_sect = stackCreate();
 
-int main() {
-	printf("Hello world!\n");
-	
+	robotPut(&food_sect, "meat");
+
 	return 0;
 }
