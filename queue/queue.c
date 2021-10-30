@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "../lists/db.h"
 
+int main()
+{
+	ListDataBase *list_data_base = create("test1");
 
-int main() {
-	printf("Hello world!\n");
-	
 	return 0;
 }

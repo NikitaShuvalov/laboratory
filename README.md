@@ -8,5 +8,10 @@
 
 ### Run
 
-- make <file_name>
-- ./<file_name>
+- make file_name
+- ./file_name
+
+## Or run
+
+- cc file_name.c
+- ./a.out
