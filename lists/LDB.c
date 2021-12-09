@@ -6,11 +6,13 @@ int main() {
 
 	ListDataBase *list_data_base = create(0, "test1"); // creating the list.
 
-        addElement(&list_data_base, 1, "test2"); // using function for adding item in list.
+    addElement(&list_data_base, 1, "test2"); // using function for adding item in list.
 
 	addElement(&list_data_base, 2, "test3");
 
-	// ....
+	readDatabase(&list_data_base, 1);
+
+	searchElementInDatabase(&list_data_base, "test3");
 
 	while (list_data_base != NULL) {
 
