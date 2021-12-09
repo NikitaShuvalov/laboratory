@@ -26,7 +26,7 @@ ListDataBase *create(int set_index, char *set_value) {
 
 
 // Function for adding items in list.
-void addElement(ListDataBase **list_data_base, int set_index, char *set_value) {
+void add_element_in_database(ListDataBase **list_data_base, int set_index, char *set_value) {
 	// list_item_index++;
 	
 	ListDataBase *new_element = create(set_index, set_value);
@@ -37,28 +37,30 @@ void addElement(ListDataBase **list_data_base, int set_index, char *set_value) {
 
 
 // Function that returns the item at its index in the list.
-void readDatabase(ListDataBase **list_data_base, int index) {
+void search_element_in_database(ListDataBase **list_data_base, int index) {
 	ListDataBase *node = (ListDataBase *)malloc(sizeof(ListDataBase));
 
 	node->next = *list_data_base;
 
 	while (node->next != NULL) {
+		node = node->next;
 		if (node->index == index) {
-			printf("Value by index %d: %s\n", index, node->value);
+			printf("Value: %s\n", node->value);
 		}
 	}
 }
 
 
 // Function that returns the index of an element in the list.
-void searchElementInDatabase(ListDataBase **list_data_base, char value) {
+void search_index_in_database(ListDataBase **list_data_base, char *value) {
 	ListDataBase *node = (ListDataBase *)malloc(sizeof(ListDataBase));
 
 	node->next = *list_data_base;
 
 	while (node->next != NULL) {
+		node = node->next;
 		if (node->value == value) {
-			printf("Index value %s is: %d\n", value, node->index);
+			printf("Index: %d\n", node->index);
 		}
 	}
 }
