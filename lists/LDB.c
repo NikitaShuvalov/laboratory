@@ -10,9 +10,9 @@ int main() {
 
 	add_element_in_database(&list_data_base, 2, "test3");
 
-	search_element_in_database(&list_data_base, 1);
+	find_element_in_database(&list_data_base, 1);
 
-	search_index_in_database(&list_data_base, "test3");
+	find_index_in_database(&list_data_base, "test3");
 
 	while (list_data_base != NULL) {
 
