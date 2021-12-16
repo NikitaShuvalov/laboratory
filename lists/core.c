@@ -37,7 +37,7 @@ void add_element_in_database(ListDataBase **list_data_base, int set_index, char 
 
 
 // Function that returns the item at its index in the list.
-void search_element_in_database(ListDataBase **list_data_base, int index) {
+void find_element_in_database(ListDataBase **list_data_base, int index) {
 	ListDataBase *node = (ListDataBase *)malloc(sizeof(ListDataBase));
 
 	node->next = *list_data_base;
@@ -52,7 +52,7 @@ void search_element_in_database(ListDataBase **list_data_base, int index) {
 
 
 // Function that returns the index of an element in the list.
-void search_index_in_database(ListDataBase **list_data_base, char *value) {
+void find_index_in_database(ListDataBase **list_data_base, char *value) {
 	ListDataBase *node = (ListDataBase *)malloc(sizeof(ListDataBase));
 
 	node->next = *list_data_base;
