@@ -1,6 +1,7 @@
 // LDB - List DataBase
 
-#include "core.c"
+#include "core.c" // file with functions.
+#include "core.h" // this file is headers, with declaration of functions.
 
 int main() {
 
