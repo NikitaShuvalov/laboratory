@@ -8,3 +8,7 @@ void find_element_in_database(ListDataBase **list_data_base, int index);
 
 // function that returns the index of an element in the list.
 void find_index_in_database(ListDataBase **list_data_base, char *value);
+
+
+// function for remove element by index.
+void delete_element_in_database(ListDataBase **list_data_base, int index);

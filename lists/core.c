@@ -64,3 +64,19 @@ void find_index_in_database(ListDataBase **list_data_base, char *value) {
 		}
 	}
 }
+
+
+// function for remove element by index.
+void delete_element_in_database(ListDataBase **list_data_base, int index) {
+	ListDataBase *node = (ListDataBase *)malloc(sizeof(ListDataBase));
+
+	node->next = *list_data_base;
+
+	while (node->next != NULL) {
+		node = node->next;
+		if (node->index == index) {
+			printf("удален элемент: %s под индексом: %d\n", node->value, index);
+			free(node);
+		}
+	}
+}
