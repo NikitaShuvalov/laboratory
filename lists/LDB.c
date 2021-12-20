@@ -15,6 +15,8 @@ int main() {
 
 	find_index_in_database(&list_data_base, "test3");
 
+	delete_element_in_database(&list_data_base, 1);
+
 	while (list_data_base != NULL) {
 
 		printf("index: %d, value: %s\n", list_data_base->index, list_data_base->value);
