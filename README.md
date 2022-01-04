@@ -20,11 +20,11 @@
 
 #### Run queue
 - cd queue
-- cc queue.c
+- cc main.c
 - ./a.out
 
 #### Run stack
 - cd stack
-- cc RCAGC.c
+- cc main.c
 - ./a.out
 
